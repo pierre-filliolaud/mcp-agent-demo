@@ -27,7 +27,7 @@ mcp-agent-demo/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourname/mcp-agent-demo.git
+git clone https://github.com/pierre-filliolaud/mcp-agent-demo.git
 cd mcp-agent-demo
 ```
 
@@ -56,6 +56,10 @@ Then type a valid MCP JSON request, e.g.:
 ```
 
 Press Enter to see the response.
+
+```bash
+echo '{"tool_use": {"name": "hello", "arguments": {"foo": "bar"}}}' | poetry run agent
+```
 
 ---
 
