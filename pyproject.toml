@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mcp-agent-demo"
+version = "0.1.0"
+description = "Simple MCP agent"
+authors = ["Pierre Filliolaud <pierre@example.com>"]
+packages = [
+  { include = "mcpagent", from = "src/main/python" }
+]
+
+[tool.poetry.scripts]
+agent = "mcpagent.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
